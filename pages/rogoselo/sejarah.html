@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Religi Pekalongan</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../../index.html" style="text-decoration: none;"><h2 class="title">Wisata Religi di Pekalongan</h2></a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span id="open">&#9776;</span><span id="close">X</span> 
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Sejarah Makam</a>
+                        <div class="dropdown-content">
+                        <a href="../sapuro/sejarah.html">Habib Ahmad</a>
+                        <a href="../kayugeritan/sejarah.html">Maulana Habib Abu Bakar</a>
+                        <a href="../rogoselo/sejarah.html">Ki Ageng Rogoselo</a>
+                        </div>
+                    </li>
+                    <li><a href="../kontak.html">Kontak</a></li>
+                    <li><a href="../galeri.html">Galeri</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Lokasi Makam</a>
+                        <div class="dropdown-content">
+                        <a href="../sapuro/lokasi.html">Habib Ahmad</a>
+                        <a href="../kayugeritan/lokasi.html">Maulana Habib Abu Bakar</a>
+                        <a href="../rogoselo/lokasi.html">Ki Ageng Rogoselo</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Main Content Section -->
+    <main>
+        
+
+        <section id="accordion" style="margin-top: 20px; min-height: 80vh;">
+            <div id="makam-sapuro">
+                <h3 style="text-align: center;">Sejarah Makam Ki Ageng Rogoselo</h3>
+                
+                <div class="makam-content">
+                    <img src="../../images/rogoselo.jpg" alt="Makam Sapuro">
+                    <div class="makam-details">
+                        
+            
+                            
+                                <p style="line-height: 2;">
+                                    Terdapat gerombolan orang dari Spanyol yang berniat ingin menguasai tanah Jawa, mereka dipimpin oleh sosok bernama Baron Sekeber (dalam versi lain disebut Baron Sekeder).
+                                    Baron Sekeber membuat kegaduhan di wilayah Mataram, ia dan pasukannya pun harus berurusan dengan salah satu abdi dalem Mataram bernama Kyai Atas Angin. 
+                                    Kyai Atas Angin dan pasukannya diperintah raja Mataram untuk menumpas Baron Sekeber. Dalam sebuah pertempuran Baron Sekeber berhasil dikalahkan, namun ia melarikan diri sampai ke wilayah Pekalongan.
+                                    Di wilayah Pekalongan Baron Sekeber bergabung dengan pasukan Belanda yang juga membenci pasukan Mataram, ia pun diberi persenjataan lengkap dan pasukan yang cukup besar.
+                                    Dalam pertempuran di Pekalongan, Kyai Atas Angin dan pasukan Mataram kewalahan menghadapi musuhnya, mereka pun menyisih untuk memulihkan tenaga.
+                                    Malam itu pasukan Mataram sampai di depan sebuah masjid yang sedang mengadakan pengajian, setelah ditelusuri ternyata pengajian tersebut dipimpin oleh ulama sakti bernama Syekh Abdullah.
+                                    Kyai Atas Angin pun bertemu dan bermaksud untuk meminta bantuan Syekh Abdullah yang ternyata juga resah dengan keberadaan pasukan Belanda.
+                                    Berdasarkan kesepakatan, pasukan Kyai Atas Angin akan bergabung dengan santri Syekh Abdullah, namun sebelum melakukan penyerangan mereka terlebih dahulu digembleng ilmu kanuragan, di sisi lain ada pasukan telik sandi yang terus memantau pergerakan Baron Sekeber dan pasukannya. Hingga waktunya tiba, pasukan Mataram dan santri Syekh Abdullah pun melakukan penyerangan, Baron Sekeber dan pasukannya yang tidak siap pun terpojok.
+                                    Banyak dari pasukan Baron Sekeber yang tumbang, Baron Sekeber sendiri juga terbunuh karena terkena tusukan senjata dari Kyai Atas Angin.
+                                    Karena jasa besarnya, Syekh Abdullah diberi gelar Ki Ageng Rogoselo, sampai kini nama tersebut masih akrab dipakai untuk menyebut Syekh Abdullah.
+                                </p>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <div id="jsScroll" class="scroll">
+        <i class="material-icons">expand_less</i>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wisata Religi Pekalongan.</p>
+        </div>
+    </footer>
+    <script>
+         const scrollButton = document.getElementById("jsScroll");
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 100) {
+                scrollButton.style.display = "block"; 
+            } else {
+                scrollButton.style.display = "none"; 
+            }
+        });
+
+        scrollButton.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        function toggleMenu() {
+            const navList = document.querySelector('.nav-list');
+            const navActive = navList.classList.toggle('active'); 
+            const open = document.querySelector('#open');
+            const close = document.querySelector('#close');
+            if (navActive) {
+                open.style.display = 'none';
+                close.style.display = 'block';
+            } else {
+                close.style.display = 'none';
+                open.style.display = 'block';
+            }
+        }
+
+    </script>
+
+</body>
+</html>
