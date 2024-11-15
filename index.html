@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Religi Pekalongan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" style="text-decoration: none;"><h2 class="title">Wisata Religi di Pekalongan</h2></a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span id="open">&#9776;</span><span id="close">X</span> 
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Sejarah Makam</a>
+                        <div class="dropdown-content">
+                        <a href="pages/sapuro/sejarah.html">Habib Ahmad</a>
+                        <a href="pages/kayugeritan/sejarah.html">Maulana Habib Abu Bakar</a>
+                        <a href="pages/rogoselo/sejarah.html">Ki Ageng Rogoselo</a>
+                        </div>
+                    </li>
+                    <li><a href="pages/kontak.html">Kontak</a></li>
+                    <li><a href="pages/galeri.html">Galeri</a></li>
+                    <li class="dropdown">
+                        <a href="pages/javascript:void(0)" class="dropbtn">Lokasi Makam</a>
+                        <div class="dropdown-content">
+                        <a href="pages/sapuro/lokasi.html">Habib Ahmad</a>
+                        <a href="pages/kayugeritan/lokasi.html">Maulana Habib Abu Bakar</a>
+                        <a href="pages/rogoselo/lokasi.html">Ki Ageng Rogoselo</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Carousel Section -->
+        <section id="carousel" class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="carousel-item">
+                        <img src="images/sapuro2.jpg" alt="Makam Sapuro">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sapuro6.jpg" alt="Makam Sapuro2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kayugeritan.webp" alt="Makam Maulana Habib Abu Bakar">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sapuro5.webp" alt="Makam rogoselo">
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section  class="description">
+            <div class="container">
+                <h2>- Pekalongan -</h2>
+                <p style="text-align: left; line-height: 2;">
+                    Pekalongan, yang terletak di Provinsi Jawa Tengah, adalah salah satu kota yang memiliki banyak potensi wisata, termasuk wisata religi. Pekalongan dikenal dengan keanekaragaman budaya dan agama yang ada di kota tersebut. Selain itu, Pekalongan juga dikenal sebagai pusat batik dengan tradisi yang sudah sangat mendalam, namun dalam konteks wisata religi, ada beberapa tempat yang menjadi tujuan ziarah dan memperlihatkan sisi spiritual serta sejarah agama.
+                    <br>
+                    Berikut merupakan makam aulia atau para wali yang sering menjadi destinasi wisata religi di Pekalongan :
+                    
+                </p>
+                <h3 style="text-align: left; margin-top: 20px;">1. Komplek Makam Sapuro </h3>
+                <p style="text-align: left; line-height: 2;">
+                    Sapuro merupakan salah satu desa di Pekalongan yang terletak dipinggir jalan pantura. Di desa ini, terdapat komplek makam auliya diantaranya Makam Habib Ahmad Al Athas yang merupakan wali kutub pada zamannya, beserta keluarganya. Kemudian makam Habib Alwi Bafaqih yang berada di tengah-tengah makam umum sapuro. Lalu di sebelah Timur terdapat makam dari keluarga Maulana Habib Luthfi bin Yahya, Kemudian di sebelah Selatan di tengah-tengah pemukiman terdapat makam Mbah Yosopuro yang merupakan tokoh agama yang pertama kali berdakwah di sapuro. Dan masih banyak lagi makam para tokoh, baik dari kraton maupun tokoh agama yang dimakamkan di komplek sapuro.   
+                    
+                </p>
+                <h3 style="text-align: left; margin-top: 20px;">2. Komplek Makam Kayugeritan </h3>
+                <p style="text-align: left; line-height: 2;">
+                    Kayugeritan merupakan salah satu desa di Pekalongan yang terletak ditengah kabupaten Pekalongan. Disana terdapat makam Maulana Habib Abu Bakar yang merupakan leluhur dari Maulana Habib Luthfi bih Ali bin Hasyim bin Yahya. Dulu yang pertama kali mempelopori dan membuka makam ini adalah Habib Luthfi sendiri dan juga Romo KH. Taufiq yang merupakan ulama kharismatik di Pekalongan sekaligus pengasuh pondok pesantren At-Taufiqi.
+                </p>
+                <h3 style="text-align: left; margin-top: 20px;">3. Komplek Makam Rogoselo </h3>
+                <p style="text-align: left; line-height: 2;">
+                    Rogoselo merupakan salah satu desa yang terletak di plosok kabupaten Pekalongan. Disana terdapat makam Ki Ageng Rogoselo dan Ki Ageng Penatas Angin.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+    <div id="jsScroll" class="scroll">
+        <i class="material-icons">expand_less</i>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wisata Religi Pekalongan.</p>
+        </div>
+    </footer>
+    <script>
+        const scrollButton = document.getElementById("jsScroll");
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 100) {
+                scrollButton.style.display = "block"; 
+            } else {
+                scrollButton.style.display = "none"; 
+            }
+        });
+
+        scrollButton.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+        let currentSlide = 0;
+
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+
+        function moveSlide(step) {
+            currentSlide += step;
+            
+            if (currentSlide >= totalSlides) {
+                currentSlide = 0;
+            } else if (currentSlide < 0) {
+                currentSlide = totalSlides - 1;
+            }
+            
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const carouselSlide = document.querySelector('.carousel-slide');
+            carouselSlide.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        setInterval(() => moveSlide(1), 5000);
+
+        function toggleMenu() {
+            const navList = document.querySelector('.nav-list');
+            const navActive = navList.classList.toggle('active'); 
+            const open = document.querySelector('#open');
+            const close = document.querySelector('#close');
+            if (navActive) {
+                open.style.display = 'none';
+                close.style.display = 'block';
+            } else {
+                close.style.display = 'none';
+                open.style.display = 'block';
+            }
+        }
+
+    </script>
+
+</body>
+</html>
