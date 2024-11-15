@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Religi Pekalongan</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../../index.html" style="text-decoration: none;"><h2 class="title">Wisata Religi di Pekalongan</h2></a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span id="open">&#9776;</span><span id="close">X</span> 
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Sejarah Makam</a>
+                        <div class="dropdown-content">
+                        <a href="../sapuro/sejarah.html">Habib Ahmad</a>
+                        <a href="../kayugeritan/sejarah.html">Maulana Habib Abu Bakar</a>
+                        <a href="../rogoselo/sejarah.html">Ki Ageng Rogoselo</a>
+                        </div>
+                    </li>
+                    <li><a href="../kontak.html">Kontak</a></li>
+                    <li><a href="../galeri.html">Galeri</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Lokasi Makam</a>
+                        <div class="dropdown-content">
+                        <a href="../sapuro/lokasi.html">Habib Ahmad</a>
+                        <a href="../kayugeritan/lokasi.html">Maulana Habib Abu Bakar</a>
+                        <a href="../rogoselo/lokasi.html">Ki Ageng Rogoselo</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Main Content Section -->
+    <main>
+        
+
+        <section id="accordion" style="margin-top: 20px; min-height: 80vh;">
+            <div id="makam-sapuro">
+                <h3 style="text-align: center;">Lokasi Makam Sapuro (HABIB AHMAD BIN ABDULLAH BIN THALIB AL ATHOS) PEKALONGAN</h3>
+                
+                <div class="makam-content">
+                    <img src="../../images/sapuro2.jpg" alt="Makam Sapuro">
+                    <div class="makam-details">
+                        
+            
+                            
+                                <p style="line-height: 2;">
+                                    Makam keramat Sapuro Kota Pekalongan yang lokasinya dekat dengan jalur pantura ini laksana magnet bagi masyarakat Kota Batik Pekalongan dan sekitarnya. Komplek pemakaman umum kelurahan Sapuro ini menjadi salah satu tujuan wisata religius di karenakan di komplek pemakaman ini terdapat makam Al Habib Ahmad Bin Abdullah Bin Tholib Al Athas, seorang tokoh penyebar agama Islam di Kota Pekalongan dan sekitarnya. Apalagi setiap hari kamis sore sampai hari jum’at,komplek pemakaman ini penuh sesak dengan para peziarah yang datang dari berbagai penjuru kota di Indonesia. Lokasi makam Habib Ahmad bin Abdullah binThalib Al Athas ini sangat mudah di jangkau karena tempatnya sangat strategis. Yakni kurang lebih 100 meter dari jalan Jendral Sudirman. Sekitar 5oo meter dari perempatan Ponolawen ke arah timur, atau sekitar 2 kilometer ke arah barat dari Terminal induk Kota Pekalongan.
+                                </p>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <div id="jsScroll" class="scroll">
+        <i class="material-icons">expand_less</i>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wisata Religi Pekalongan.</p>
+        </div>
+    </footer>
+    <script>
+         const scrollButton = document.getElementById("jsScroll");
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 100) {
+                scrollButton.style.display = "block"; 
+            } else {
+                scrollButton.style.display = "none"; 
+            }
+        });
+
+        scrollButton.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        function toggleMenu() {
+            const navList = document.querySelector('.nav-list');
+            const navActive = navList.classList.toggle('active'); 
+            const open = document.querySelector('#open');
+            const close = document.querySelector('#close');
+            if (navActive) {
+                open.style.display = 'none';
+                close.style.display = 'block';
+            } else {
+                close.style.display = 'none';
+                open.style.display = 'block';
+            }
+        }
+
+    </script>
+
+</body>
+</html>
